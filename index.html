@@ -1,1 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dealer Partnerships | Safeeds Transport Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Partner with Safeeds Transport Inc. to handle auto transport for your out-of-state customers. Zero logistics headaches, zero liability, $100 referral bonus per completed shipment."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #f97316;
+      --bg: #f3f4f6;
+      --bg-soft: #f9fafb;
+      --card-bg: #ffffff;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border-subtle: #e5e7eb;
+      --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      --radius-pill: 999px;
+      --max-width: 1120px;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg-soft);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      min-height: 100vh;
+      background: linear-gradient(
+        to bottom,
+        #ffffff 0,
+        #ffffff 220px,
+        #f9fafb 220px,
+        #eef2ff 100%
+      );
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.7);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .logo-text-main {
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+    }
+
+    .logo-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-pill {
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-pill span.highlight {
+      font-weight: 600;
+    }
+
+    .btn {
+      border-radius: var(--radius-pill);
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: all 0.16s ease-out;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-ghost {
+      background: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn-ghost:hover {
+      background: #f9fafb;
+      border-color: #d1d5db;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 26px 20px 70px;
+    }
+
+    /* Hero */
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
+      gap: 32px;
+      align-items: center;
+      padding: 18px 0 10px;
+    }
+
+    .hero-kicker {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #4b5563;
+      margin-bottom: 8px;
+    }
+
+    .hero-title {
+      font-size: clamp(30px, 4vw, 36px);
+      line-height: 1.08;
+      margin: 0 0 10px;
+      color: #111827;
+    }
+
+    .hero-title span {
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 480px;
+      line-height: 1.6;
+      margin: 0 0 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .hero-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .hero-secondary {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .hero-secondary span.strong {
+      color: #111827;
+      font-weight: 500;
+    }
+
+    .hero-video-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      padding: 16px 16px 14px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-video-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .hero-video-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .hero-video-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .hero-video-tag {
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .hero-avatar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hero-avatar-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero-avatar-text {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .hero-video-frame {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #e5e7eb;
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+    }
+
+    .hero-video-play {
+      width: 60px;
+      height: 60px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+      transition: all 0.15s ease-out;
+    }
+
+    .hero-video-play:hover {
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    .hero-video-play-icon {
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-left: 15px solid #111827;
+      margin-left: 3px;
+    }
+
+    .hero-video-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Trust bar */
+
+    .trust {
+      margin-top: 16px;
+      padding: 12px 16px;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .trust-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .trust-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+
+    .trust-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 11px;
+    }
+
+    .trust-metric-label {
+      color: var(--text-muted);
+    }
+
+    .trust-metric-value {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    /* Section base */
+
+    section {
+      margin-top: 38px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin: 0 0 4px;
+      color: #111827;
+    }
+
+    .section-lead {
+      font-size: 13px;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.7;
+      margin: 0 0 16px;
+    }
+
+    /* Why dealers */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
+      gap: 22px;
+    }
+
+    .why-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      padding: 14px 14px 12px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+      font-size: 13px;
+    }
+
+    .why-title-sm {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .why-list li {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .why-icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: #fee2e2;
+      color: #b91c1c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    .why-icon.good {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    /* How it works */
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .step-card {
+      border-radius: var(--radius-lg);
+      background: var(--card-bg);
+      border: 1px solid var(--border-subtle);
+      padding: 14px 14px 12px;
+      font-size: 13px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+    }
+
+    .step-index {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .step-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .step-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .step-footnote {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    /* Benefits */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .benefit-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      padding: 14px 14px 12px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+      font-size: 13px;
+    }
+
+    .benefit-heading {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    .benefit-list {
+      list-style: none;
+      padding: 0;
+      margin: 6px 0 0;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .benefit-list li {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+
+    .benefit-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #2563eb;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* Referral bonus */
+
+    .bonus-card {
+      margin-top: 14px;
+      border-radius: var(--radius-xl);
+      background: #ffffff;
+      border: 1px solid #bfdbfe;
+      padding: 16px 16px 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 16px;
+      align-items: center;
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+    }
+
+    .bonus-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      border-radius: 999px;
+      padding: 4px 10px;
+      background: #fef3c7;
+      border: 1px solid #fbbf24;
+      color: #92400e;
+      margin-bottom: 6px;
+    }
+
+    .bonus-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .bonus-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .bonus-highlight {
+      color: #ea580c;
+      font-weight: 600;
+    }
+
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .bonus-box {
+      border-radius: 12px;
+      background: #f9fafb;
+      border: 1px dashed #d1d5db;
+      padding: 10px 10px;
+    }
+
+    .bonus-box-title {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .bonus-box-text {
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Testimonials */
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .testimonial-video {
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 10px 10px 12px;
+      font-size: 12px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+    }
+
+    .testimonial-video-frame {
+      border-radius: 12px;
+      overflow: hidden;
+      background: #e5e7eb;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .testimonial-role {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .testimonial-quote {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .reviews-row {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 16px;
+    }
+
+    .review-card {
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 12px 12px 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+    }
+
+    .review-rating {
+      color: #f59e0b;
+      margin-bottom: 4px;
+    }
+
+    .review-name {
+      font-size: 11px;
+      color: #111827;
+      margin-top: 4px;
+    }
+
+    /* Responsibility */
+
+    .responsibility-card {
+      border-radius: var(--radius-xl);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 16px 16px 14px;
+      font-size: 13px;
+      line-height: 1.7;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+      margin-top: 8px;
+    }
+
+    .responsibility-cols {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .responsibility-list {
+      list-style: none;
+      padding: 0;
+      margin: 6px 0 0;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .responsibility-list li {
+      margin-bottom: 7px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .resp-bullet {
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: #f97316;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* FAQ */
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .faq-item {
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 12px 12px 10px;
+      font-size: 12px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+    }
+
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .faq-a {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* CTA */
+
+    .cta {
+      margin-top: 34px;
+      border-radius: var(--radius-xl);
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+      padding: 16px 16px 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
+      gap: 20px;
+      align-items: center;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+    }
+
+    .cta-title {
+      font-size: 18px;
+      margin: 0 0 6px;
+      color: #111827;
+    }
+
+    .cta-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      max-width: 430px;
+      line-height: 1.7;
+      margin: 0 0 10px;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .cta-contact {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .cta-contact span {
+      color: #111827;
+      font-weight: 500;
+    }
+
+    .cta-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .cta-field-group {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    label {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 7px 8px;
+      border-radius: 9px;
+      border: 1px solid #d1d5db;
+      background: #f9fafb;
+      color: var(--text-main);
+      font-size: 12px;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 64px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #9ca3af;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.4);
+      background: #ffffff;
+    }
+
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 20px 20px 34px;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    footer span.brand {
+      color: #111827;
+      font-weight: 500;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .hero,
+      .why-grid,
+      .steps-grid,
+      .two-col,
+      .bonus-card,
+      .testimonial-grid,
+      .reviews-row,
+      .responsibility-cols,
+      .faq-grid,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-video-card {
+        order: -1;
+      }
+
+      .trust {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav {
+        padding-inline: 14px;
+      }
+
+      main {
+        padding-inline: 14px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-pill {
+        display: none;
+      }
+
+      .hero-title {
+        font-size: 26px;
+      }
+
+      .step-card,
+      .benefit-card,
+      .testimonial-video,
+      .review-card,
+      .faq-item {
+        padding: 10px 10px 9px;
+      }
+
+      .bonus-card {
+        padding: 12px 12px 10px;
+      }
+
+      .cta-field-group {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo-mark">S</div>
+          <div>
+            <div class="logo-text-main">Safeeds Transport Inc.</div>
+            <div class="logo-sub">Dealer Partnership Program</div>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <div class="nav-pill">
+            <span class="highlight">Dealers</span> earn $100 per shipment
+          </div>
+          <button class="btn btn-ghost">
+            Text Richard: <strong>+1 (315) 849-1255</strong>
+          </button>
+          <button class="btn btn-primary">
+            Become a Dealer Partner
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div>
+          <div class="hero-kicker">Dealer partnerships</div>
+          <h1 class="hero-title">
+            Turn every out-of-state buyer into an <span>easy win.</span>
+          </h1>
+          <p class="hero-subtitle">
+            We handle your customers’ auto transport from A to Z - you keep
+            closing deals, protect your CSI, and never touch logistics again.
+            Every completed shipment earns you a $100 referral bonus.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">
+              Become a Dealer Partner
+            </button>
+            <button class="btn btn-ghost">
+              Watch dealer success stories
+            </button>
+          </div>
+          <div class="hero-hint">
+            No contracts · No minimums · Nationwide coverage
+          </div>
+          <div class="hero-secondary">
+            <span class="strong">Already trusted by 10+ dealers</span> - BMW,
+            Lexus, independent stores and more.
+          </div>
+        </div>
+
+        <aside class="hero-video-card">
+          <div class="hero-video-header">
+            <div>
+              <div class="hero-video-title">A message from Richard</div>
+              <div class="hero-video-sub">
+                Owner of Safeeds Transport · 12+ years in auto shipping
+              </div>
+            </div>
+            <div class="hero-video-tag">1:12 min</div>
+          </div>
+
+          <div class="hero-avatar">
+            <div class="hero-avatar-circle">R</div>
+            <div class="hero-avatar-text">
+              “Dealers shouldn’t be babysitting transport. You sell the car -
+              we handle the headache, take the hit, and protect your name.”
+            </div>
+          </div>
+
+          <div class="hero-video-frame">
+            <!-- Replace with real embedded video -->
+            <div class="hero-video-play">
+              <div class="hero-video-play-icon"></div>
+            </div>
+          </div>
+          <div class="hero-video-footer">
+            <span>Click play to see exactly how our dealer program works.</span>
+            <span class="hero-video-tag">Intro for dealers</span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Trust bar -->
+      <section class="trust">
+        <div class="trust-left">
+          <span class="trust-dot"></span>
+          <span>Specialized in dealer & auction transports for over a decade.</span>
+        </div>
+        <div class="trust-metrics">
+          <div>
+            <div class="trust-metric-label">Years in business</div>
+            <div class="trust-metric-value">12+</div>
+          </div>
+          <div>
+            <div class="trust-metric-label">Active dealer partners</div>
+            <div class="trust-metric-value">10+</div>
+          </div>
+          <div>
+            <div class="trust-metric-label">Vehicles shipped</div>
+            <div class="trust-metric-value">Thousands</div>
+          </div>
+          <div>
+            <div class="trust-metric-label">Average rating</div>
+            <div class="trust-metric-value">4.8★</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why dealers partner with us -->
+      <section>
+        <div class="section-label">Why dealers partner with us</div>
+        <h2 class="section-title">We remove everything you hate about transport.</h2>
+        <p class="section-lead">
+          One bad transport can cost you a deal, a survey, and a relationship.
+          Our job is to take that risk off your plate completely and quietly make you look good.
+        </p>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-title-sm">The reality you’re trying to avoid:</div>
+            <ul class="why-list">
+              <li>
+                <div class="why-icon">!</div>
+                <div>Delayed trucks that kill the deal or push a buyer to walk away.</div>
+              </li>
+              <li>
+                <div class="why-icon">!</div>
+                <div>Damage on delivery — and suddenly the customer blames <strong>you</strong>, not the carrier.</div>
+              </li>
+              <li>
+                <div class="why-icon">!</div>
+                <div>Your phone blowing up with “Where’s my car?” messages for a week straight.</div>
+              </li>
+              <li>
+                <div class="why-icon">!</div>
+                <div>Your team doing dispatch work instead of selling cars.</div>
+              </li>
+              <li>
+                <div class="why-icon">!</div>
+                <div>Referring a random trucker and hoping they don’t embarrass your store.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="why-card">
+            <div class="why-title-sm">What our dealer partners get instead:</div>
+            <ul class="why-list">
+              <li>
+                <div class="why-icon good">✓</div>
+                <div>You say “Yes, we can help with that” to every out-of-state buyer — and then you’re out of the middle.</div>
+              </li>
+              <li>
+                <div class="why-icon good">✓</div>
+                <div>Your customer gets a smooth, fully insured, door-to-door delivery.</div>
+              </li>
+              <li>
+                <div class="why-icon good">✓</div>
+                <div>We handle every call, every update, every headache — not your salespeople or managers.</div>
+              </li>
+              <li>
+                <div class="why-icon good">✓</div>
+                <div>Your CSI and reviews stay strong because we don’t disappear when things get complicated.</div>
+              </li>
+              <li>
+                <div class="why-icon good">✓</div>
+                <div>On top of that, your team earns an easy <strong>$100 referral bonus</strong> per completed shipment.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section>
+        <div class="section-label">How it works</div>
+        <h2 class="section-title">Simple, clean, dealer-friendly process.</h2>
+        <p class="section-lead">
+          Built for real showrooms and real schedules. No extra workload on your
+          side, no complicated portal. You connect us once — we handle the rest.
+        </p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-index">1</div>
+            <div class="step-title">You connect us.</div>
+            <div class="step-text">
+              Text or email your customer’s name and number — or simply tell them,
+              “Here’s the transport guy we use, reach out to Richard.” From that
+              moment, your team is <strong>out</strong> of the logistics.
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-index">2</div>
+            <div class="step-title">We own the whole process.</div>
+            <div class="step-text">
+              We quote, schedule, assign the driver, send updates, and deal with
+              every “Where’s my car?” message. You don’t chase carriers or track
+              trucks — that’s our job.
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-index">3</div>
+            <div class="step-title">You get paid & praised.</div>
+            <div class="step-text">
+              Your customer gets their vehicle safely and on time, thanks you for
+              the connection, and once delivery is complete, we send you a
+              <strong>$100 referral bonus</strong> for each customer you connected.
+            </div>
+          </div>
+        </div>
+
+        <div class="step-footnote">
+          No contracts. No volume commitments. Test us on one buyer and keep using
+          us only if we earn that spot.
+        </div>
+      </section>
+
+      <!-- Benefits section -->
+      <section>
+        <div class="section-label">What you get</div>
+        <h2 class="section-title">Built for both salespeople and management.</h2>
+        <p class="section-lead">
+          Salespeople care about time and money. Management cares about CSI,
+          liability, and smooth operations. This program is designed to satisfy
+          both sides.
+        </p>
+
+        <div class="two-col">
+          <div class="benefit-card">
+            <div class="benefit-heading">For Salespeople & Finance</div>
+            <ul class="benefit-list">
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>Extra <strong>$100 per deal</strong> you connect us with.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>No time wasted chasing transport quotes — you stay on the floor.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>No more “Where is my car?” calls blowing up your cell on your day off.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>You look like the pro who “has a guy” who actually delivers.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>Direct access to Richard if anything urgent ever comes up.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-heading">For Managers & GMs</div>
+            <ul class="benefit-list">
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>Fewer complaints, smoother deliveries, better CSI and surveys.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>Your team stays focused on selling, not dispatching trucks.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>Fully insured, vetted carriers instead of random load-board drivers.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>No liability on your dealership’s side — we operate as the broker and take the hit if something goes wrong.</span>
+              </li>
+              <li>
+                <span class="benefit-bullet"></span>
+                <span>Use us as your main option or as your “when it really matters” backup.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Referral bonus -->
+      <section>
+        <div class="section-label">Referral bonus</div>
+        <div class="bonus-card">
+          <div>
+            <div class="bonus-pill">Dealer-only benefit</div>
+            <div class="bonus-title">
+              The $100 is a thank-you - not the only reason dealers stay.
+            </div>
+            <div class="bonus-text">
+              When you connect your buyer with us, you’re trusting us with your
+              name. The <span class="bonus-highlight">$100 referral bonus</span>
+              for every completed shipment is our way of saying “We appreciate
+              that.”
+              <br /><br />
+              Most of our active sales partners quietly add an extra
+              <span class="bonus-highlight">$600–$900/month</span> from deals
+              they’re already closing - without lifting a finger.
+            </div>
+          </div>
+          <div class="bonus-grid">
+            <div class="bonus-box">
+              <div class="bonus-box-title">How it’s paid</div>
+              <div class="bonus-box-text">
+                We send your bonus within 24–48 hours of confirmed delivery via
+                Zelle, CashApp, Venmo, or check — whatever’s easiest for you.
+              </div>
+            </div>
+            <div class="bonus-box">
+              <div class="bonus-box-title">No games, no quotas</div>
+              <div class="bonus-box-text">
+                No thresholds, no tiers. One shipped customer =
+                <strong>$100</strong> to you. If you send eight in a month,
+                that’s <strong>$800+</strong> straight to your pocket.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dealer testimonial videos -->
+      <section>
+        <div class="section-label">Dealer stories</div>
+        <h2 class="section-title">What our dealer partners say.</h2>
+        <p class="section-lead">
+          Hear directly from salespeople and managers who stopped touching
+          transport - and haven’t looked back.
+        </p>
+
+        <div class="testimonial-grid">
+          <!-- Replace with real embedded videos -->
+          <div class="testimonial-video">
+            <div class="testimonial-video-frame">
+              <div class="hero-video-play">
+                <div class="hero-video-play-icon"></div>
+              </div>
+            </div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Mike R.</div>
+              <div class="testimonial-role">Sales Manager · BMW store · Texas</div>
+            </div>
+            <div class="testimonial-quote">
+              “We send all of our out-of-state buyers to Richard now. My guys
+              don’t chase drivers, customers are happy, and the bonus is a nice
+              extra.”
+            </div>
+          </div>
+
+          <div class="testimonial-video">
+            <div class="testimonial-video-frame">
+              <div class="hero-video-play">
+                <div class="hero-video-play-icon"></div>
+              </div>
+            </div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Alex S.</div>
+              <div class="testimonial-role">
+                Internet Sales · Lexus store · California
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              “I just text Richard the customer’s info and he takes it from
+              there. Zero babysitting. My customers thank me and I get paid on
+              top. Win–win.”
+            </div>
+          </div>
+
+          <div class="testimonial-video">
+            <div class="testimonial-video-frame">
+              <div class="hero-video-play">
+                <div class="hero-video-play-icon"></div>
+              </div>
+            </div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Sarah K.</div>
+              <div class="testimonial-role">
+                GM · Independent dealer · Florida
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              “We used to let customers figure out shipping themselves. That
+              always came back on us. Since working with Safeeds, those
+              headaches disappeared.”
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-row">
+          <div class="review-card">
+            <div class="review-rating">★★★★★</div>
+            “Customer had their SUV picked up from our store and delivered out of
+            state with no issues. They called back thanking us for the referral.
+            Richard keeps us informed so we’re never blindsided.”
+            <div class="review-name">Dealer review · Google</div>
+          </div>
+          <div class="review-card">
+            <div class="review-rating">★★★★★</div>
+            “Our buyer flew in, signed, and left the car with us. Safeeds
+            handled everything from there. The customer left a 5-star review
+            mentioning how smooth the shipping was — that reflects right back on
+            our store.”
+            <div class="review-name">Customer review mentioning dealer</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Responsibility / liability -->
+      <section>
+        <div class="section-label">Liability & responsibility</div>
+        <h2 class="section-title">
+          We take the responsibility. You keep the relationship.
+        </h2>
+        <p class="section-lead">
+          When transport goes wrong with most brokers, the customer doesn’t hunt
+          the carrier - they come straight back to your dealership. Our process
+          flips that script.
+        </p>
+
+        <div class="responsibility-card">
+          <p>
+            From the customer’s point of view, <strong>we</strong> are their
+            transport company. We make it clear that Safeeds is responsible for
+            communication, updates, coordination and support — not your
+            salespeople, not your managers.
+          </p>
+          <div class="responsibility-cols">
+            <div>
+              <strong>When things go smoothly (most of the time):</strong>
+              <ul class="responsibility-list">
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>Your buyer gets their vehicle on time and in good shape.</span>
+                </li>
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>They remember that <em>you</em> “had a guy” who handled it.</span>
+                </li>
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>That goodwill sticks to your name and your dealership — not ours.</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <strong>If something unexpected happens:</strong>
+              <ul class="responsibility-list">
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>We deal directly with the carrier.</span>
+                </li>
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>We handle claims, paperwork, and problem-solving.</span>
+                </li>
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>Your team doesn’t spend days stuck in the middle.</span>
+                </li>
+                <li>
+                  <span class="resp-bullet"></span>
+                  <span>Your name stays clean. Your relationship stays intact.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section>
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Dealer Partner FAQ.</h2>
+        <p class="section-lead">
+          Straight answers - no fine print, no corporate speak. If it doesn’t
+          work in your real world, it doesn’t work for us either.
+        </p>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-q">
+              Are we liable if something goes wrong with the transport?
+            </div>
+            <div class="faq-a">
+              No. We operate as the transport broker and take responsibility for
+              logistics, communication, and carrier coordination. You’re simply
+              connecting your customer with us - we stand behind the shipment.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">Do we have to sign a long-term contract?</div>
+            <div class="faq-a">
+              No contracts or minimums required. You can test us on one customer,
+              or make us your go-to for every out-of-state buyer. We earn our
+              place with performance, not paperwork.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              Can we still use our existing transport contacts?
+            </div>
+            <div class="faq-a">
+              Absolutely. Many dealers use us as their primary solution and keep
+              others as backup — others do the opposite. You decide where we fit.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              How and when do we get the $100 referral bonus?
+            </div>
+            <div class="faq-a">
+              After the vehicle is delivered and confirmed, we send your
+              <strong>$100</strong> referral bonus within 24–48 hours via Zelle,
+              CashApp, Venmo, or check - whichever you prefer.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">What routes do you cover?</div>
+            <div class="faq-a">
+              We ship nationwide - from any state to any state. Open and enclosed
+              carriers are available depending on the vehicle, value, and your
+              customer’s preference.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">Who talks to the customer after we refer them?</div>
+            <div class="faq-a">
+              We do. Once you connect us, we handle all transport-related
+              communication so your team isn’t tied up answering questions about
+              drivers, timing, or delivery.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div>
+          <div class="section-label">Get started</div>
+          <h2 class="cta-title">
+            Ready to have a transport guy you can actually trust?
+          </h2>
+          <p class="cta-text">
+            You don’t need to change your entire process or sign anything
+            complicated. Start with <strong>one customer</strong>. If we deliver
+            the way we say we will, you’ll know exactly where we fit in your
+            business.
+          </p>
+          <div class="cta-actions">
+            <button class="btn btn-primary">
+              Apply as a Dealer Partner
+            </button>
+            <button class="btn btn-ghost">
+              Text Richard directly
+            </button>
+          </div>
+          <div class="cta-contact">
+            Or call / text: <span>+1 (315) 849-1255</span> · Email:
+            <span>info@safeedstransport.com</span>
+          </div>
+        </div>
+        <div>
+          <form class="cta-form">
+            <div class="cta-field-group">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" type="text" placeholder="John Doe" />
+              </div>
+              <div>
+                <label for="dealer">Dealership name</label>
+                <input
+                  id="dealer"
+                  type="text"
+                  placeholder="Sandia BMW, Lexus of Houston..."
+                />
+              </div>
+            </div>
+            <div class="cta-field-group">
+              <div>
+                <label for="role">Your role</label>
+                <select id="role">
+                  <option>Salesperson</option>
+                  <option>Sales Manager</option>
+                  <option>Internet Manager</option>
+                  <option>Finance</option>
+                  <option>GM / Owner</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="+1 (555) 555-5555"
+                />
+              </div>
+            </div>
+            <div class="cta-field-group">
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="you@dealership.com"
+                />
+              </div>
+              <div>
+                <label for="volume">Out-of-state deals / month</label>
+                <select id="volume">
+                  <option>1–3</option>
+                  <option>4–7</option>
+                  <option>8–15</option>
+                  <option>16–25</option>
+                  <option>26+</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="message">Anything we should know?</label>
+              <textarea
+                id="message"
+                placeholder="Tell us about your store, your current process, and how we can make your life easier."
+              ></textarea>
+            </div>
+            <div>
+              <button class="btn btn-primary" type="submit">
+                Submit partnership inquiry
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <span class="brand">Safeeds Transport Inc.</span> · Dealer Partnership
+        Program · Nationwide Auto Transport
+      </div>
+      <div>© <span id="year"></span> Safeeds Transport Inc. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
